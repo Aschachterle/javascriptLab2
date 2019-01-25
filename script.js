@@ -9,7 +9,7 @@ class AddressBook {
         console.log
     }
     deleteAt(index) {
-        this.contacts.splice((book.contacts.indexOf(index)), 1);
+        this.contacts.splice(index, 1);
     }
     print() {
         for (let i = 0; i < this.contacts.length; i++) {
@@ -25,10 +25,6 @@ class Contact {
         this.relation = relation;
     }
 }
-
-const Adam = new Contact (`Adam`, `adam.schachterle@gmail.com`, `222-222-2222`, `Me`)
-const Einstein = new Contact (`Einstein`, `ein@thestein.me`, `313-867-5309`, `Hero`)
-const Euler = new Contact (`Euler`, `leonhard@euler.net`, `271-828-1828`, `Hero`)
 
 const book = new AddressBook();
 
@@ -57,3 +53,6 @@ while (true) {
         break;
     }
 }
+
+
+// console.log(book.contacts.indexOf(index));
