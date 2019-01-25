@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 class AddressBook {
     constructor() {
         this.contacts = [];
@@ -9,7 +9,7 @@ class AddressBook {
         console.log
     }
     deleteAt(index) {
-        this.contacts.splice(index, 1);
+        this.contacts.splice((book.contacts.indexOf(index)), 1);
     }
     print() {
         for (let i = 0; i < this.contacts.length; i++) {
@@ -57,3 +57,6 @@ while (true) {
         break;
     }
 }
+
+
+console.log(book.contacts.indexOf(index));
