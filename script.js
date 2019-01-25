@@ -57,6 +57,3 @@ while (true) {
         break;
     }
 }
-
-
-console.log(book.contacts.indexOf(index));
